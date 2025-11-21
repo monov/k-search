@@ -9,7 +9,10 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="org.jetbrains.plugins.template.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="org.jetbrains.plugins.template.startup.MyProjectActivity" />
+        <toolWindow factoryClass="org.jetbrains.plugins.template.ui.ToolWindowFactory"
+                    icon="/assets/searchIcon.svg"
+                    canCloseContents="false"
+                    id="KSearch"/>
     </extensions>
+
 </idea-plugin>
